@@ -1,0 +1,16 @@
+- git:
+    local-name: champ
+    uri: https://github.com/dean4ta/champ
+    version: u/dean4ta/develop
+- git:
+    local-name: champ_teleop
+    uri: https://github.com/chvmp/champ_teleop
+    version: master
+- git:
+    local-name: robots
+    uri: https://github.com/dean4ta/robots
+    version: u/dean4ta/develop
+- git:
+    local-name: yocs_velocity_smoother
+    uri: https://github.com/chvmp/yocs_velocity_smoother
+    version: master
