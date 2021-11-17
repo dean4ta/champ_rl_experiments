@@ -19,6 +19,9 @@ $ git clone https://github.com/dean4ta/champ_rl_experiments src
 $ cd ~/<your_ws>/src
 $ wstool update
 $ cd ~/<your_ws>
+$ cd ~/<your_ws>/src/robots
+$ ./install_descriptions
+$ cd ~/<your_ws>
 $ rosdep install --from-paths src --ignore-src -r -y
 $ catkin_make
 ```
