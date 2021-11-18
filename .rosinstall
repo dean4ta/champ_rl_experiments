@@ -14,3 +14,7 @@
     local-name: yocs_velocity_smoother
     uri: https://github.com/chvmp/yocs_velocity_smoother
     version: master
+- git:
+    local-name: rl_control
+    uri: https://github.com/dean4ta/inverted_pendulum_rl_control_ros.git
+    version: u/dean4ta/quad-control
