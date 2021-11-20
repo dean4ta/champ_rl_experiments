@@ -16,5 +16,5 @@
     version: master
 - git:
     local-name: rl_control
-    uri: https://github.com/dean4ta/inverted_pendulum_rl_control_ros.git
+    uri: https://github.com/dean4ta/rl_effort_control_ros
     version: u/dean4ta/quad-control
