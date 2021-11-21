@@ -4,7 +4,7 @@ This meta package currently contains ROS packages used to bring up a modified ve
 
 The main difference from the champ repositories is the focus on using effort commands instead of position commands. Additionally this repo focuses on the anymal_c robot as the target.
 
-![effort_command](images/effort_command.gif)
+![ugly_rl](images/ugly_rl.gif)
 
 ## Prerequisites
 
@@ -18,7 +18,6 @@ $ cd ~/<your_ws>
 $ git clone https://github.com/dean4ta/champ_rl_experiments src
 $ cd ~/<your_ws>/src
 $ wstool update
-$ cd ~/<your_ws>
 $ cd ~/<your_ws>/src/robots
 $ ./install_descriptions
 $ cd ~/<your_ws>
@@ -30,15 +29,17 @@ $ catkin_make
 
 Terminal 1 - Launch the simulation
 ```shell
-$ source devel/setup.bash
 $ roslaunch anymal_c_config gazebo.launch
+$ roslaunch anymal_c_config gazebo.launch champ_control:=true # launch with default champ control
 ```
 
-Terminal 2 - Give an effort command to the robot
+Terminal 2 - Train 
 ```shell
-$ source devel/setup.bash
-$ rostopic pub /joint_LF_KFE_effort_controller/command std_msgs/Float64 "data: 50.0"
+$ roslaunch inverted_pendulum_rl_control train.launch
 ```
+
+## Saving and Loading Model
+See [Saving and Loading Model](https://github.com/dean4ta/rl_effort_control_ros#saving-and-loading-model) in the rl_effort_control_ros repo for details on saving and loading models.
 
 ## ROS Packages
 see [`.rosinstall`](.rosinstall) for packages included in this meta package.
