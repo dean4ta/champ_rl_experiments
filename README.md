@@ -9,6 +9,8 @@ The main difference from the champ repositories is the focus on using effort com
 ## Prerequisites
 
  - ROS Noetic recommended
+ - [pytorch](https://pytorch.org/get-started/locally/)
+ - [gym](https://gym.openai.com/docs/)
 
 
 ## Setup
