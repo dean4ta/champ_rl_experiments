@@ -1,7 +1,7 @@
 - git:
     local-name: champ
     uri: https://github.com/dean4ta/champ
-    version: u/dean4ta/develop
+    version: u/dean4ta/feat/position-control
 - git:
     local-name: champ_teleop
     uri: https://github.com/chvmp/champ_teleop
@@ -9,7 +9,7 @@
 - git:
     local-name: robots
     uri: https://github.com/dean4ta/robots
-    version: u/dean4ta/develop
+    version: u/dean4ta/feat/position-control
 - git:
     local-name: yocs_velocity_smoother
     uri: https://github.com/chvmp/yocs_velocity_smoother
@@ -17,4 +17,4 @@
 - git:
     local-name: rl_control
     uri: https://github.com/dean4ta/rl_effort_control_ros
-    version: u/dean4ta/quad-control
+    version: u/dean4ta/feat/position-control
